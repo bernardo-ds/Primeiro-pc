@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-items: center;    
+}
+
+.flex {
+    display: flex;
+}
+.quadrado1{
+    width: 64%;
+    height: 75%;
+    background-color: darkgrey;
+    border-radius: 15px;
+}
+.quadrado2{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(85, 83, 83);
+    border-radius: 15px 0px 0px 15px;
+}
+.font{
+    font-family: fantasy;
+    font-size: 29px;
+    letter-spacing: 1px
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.meio{
+    margin-top: 150px;
+}
