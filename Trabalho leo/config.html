@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações | Agiliza Saúde</title>
+    <link rel="stylesheet" href="inicial.css"> 
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+</head>
+
+<body>
+    <div class="container">
+        <header class="quadrado-1 flex center">
+
+            <div class="flex center logo-wrapper">
+                <a href="inicial.html"><img src="image.png" class="logo" alt="Logo"></a>
+            </div>
+            
+            <div class="header-right-controls flex center">
+                <a href="inicial.html" style="text-decoration: none;">
+                    <button class="btn-minhas-consultas">
+                        <i class="fas fa-arrow-left"></i> Voltar ao Início
+                    </button>
+                </a>
+                
+                <div class="perfil-dropdown"> 
+                    <i class="fas fa-user-circle icon-perfil"></i>
+                    <div class="perfil-lista">
+                        <h3>Minha Conta</h3>
+                        <ul>
+                            <li><a href="#">Meu Perfil</a></li>
+                            <li><a href="config.html">Configurações</a></li>
+                            <li><a href="entrar.html" class="menu-sair">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="quadrado-3">
+            <div class="config-container">
+                <div class="config-header">
+                    <h2><i class="fas fa-user-gear"></i> Configurações</h2>
+                </div>
+
+                <!-- NOVA SEÇÃO: TEMA -->
+                <div class="config-section">
+                    <h3><i class="fas fa-moon"></i> Aparência</h3>
+                    <div class="config-row">
+                        <div class="config-info">
+                            <p>Modo Escuro</p>
+                            <span id="tema-status">Desativado</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-tema">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <h3><i class="fas fa-id-card"></i> Dados Pessoais</h3>
+                    <div class="config-row">
+                        <div class="config-info">
+                            <p>Nome Completo</p>
+                            <span>Seu Nome de Usuário</span>
+                        </div>
+                        <button class="btn-editar">Editar</button>
+                    </div>
+                    <div class="config-row">
+                        <div class="config-info">
+                            <p>E-mail Cadastrado</p>
+                            <span>usuario@exemplo.com</span>
+                        </div>
+                        <button class="btn-editar">Alterar</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <h3><i class="fas fa-sliders"></i> Preferências</h3>
+                    <div class="config-row">
+                        <div class="config-info">
+                            <p>Receber lembretes via WhatsApp</p>
+                        </div>
+                        <input type="checkbox" checked>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-salvar-config">Salvar Todas as Alterações</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="inicial.js"></script>
+</body>
+</html>
