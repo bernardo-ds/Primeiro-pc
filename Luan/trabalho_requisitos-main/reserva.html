@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva - GlobalStay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Solicitar Reserva</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="requisitos.html">Requisitos</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <form action="/processar" method="POST" class="formulario_reserva">
+                <div class="campo_grupo">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" required>
+                </div>
+                <div class="campo_grupo">
+                    <label>Passaporte:</label>
+                    <input type="text" name="passaporte" required>
+                </div>
+                <div class="campo_grupo">
+                    <label>Destino:</label>
+                    <select name="pais" required>
+                        <option value="japao">Japão</option>
+                        <option value="franca">França</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar Dados</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 GlobalStay - Hospedagem Internacional. Todos os direitos reservados.</p>
+        <p>
+            <a href="#">Termos de Uso</a> |
+            <a href="#">Política de Privacidade</a> |
+            <a href="#">Política de Cancelamento</a>
+        </p>
+    </footer>
+</body>
+</html>
